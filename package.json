@@ -1,17 +1,17 @@
 {
   "name": "blog",
-  "version": "1.0.0",
-  "description": "my note, my blog!",
-  "repository": "https://github.com/HuanBaby1314/blog.git",
-  "author": "huanxa <xahuan@trip.com>",
-  "license": "MIT",
+  "type": "module",
+  "private": true,
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
   },
-  "devDependencies": {
-    "@types/node": "^16.10.1",
-    "vitepress": "^0.19.1"
+  "dependencies": {
+    "@slidev/cli": "0.49.7",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "3.4.27",
+    "@unocss/extractor-mdc": "0.60.3"
   }
 }
