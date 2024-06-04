@@ -1,0 +1,17 @@
+{
+  "name": "blog",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "0.49.7",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "3.4.27",
+    "@unocss/extractor-mdc": "0.60.3"
+  }
+}
