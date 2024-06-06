@@ -1,17 +1,27 @@
 {
-  "name": "blog",
-  "type": "module",
+  "name": "jackhuan",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "slidev build",
-    "dev": "slidev --open",
-    "export": "slidev export"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@slidev/cli": "0.49.7",
-    "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest",
-    "vue": "3.4.27",
-    "@unocss/extractor-mdc": "0.60.3"
+    "next": "14.2.3",
+    "nextra": "^2.13.4",
+    "nextra-theme-blog": "^2.13.4",
+    "nextra-theme-docs": "^2.13.4",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "typescript": "^5"
   }
 }
