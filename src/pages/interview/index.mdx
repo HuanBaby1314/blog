@@ -30,7 +30,7 @@ function debounce(fn, delay = 200) {
   let timer = 0;
   return function () {
     if (timer) clearTimeout(timer);
-    timer = setTimeout(() =\> {
+    timer = setTimeout(() => {
       fn.apply(this, arguments);
       timer = 0;
     }, delay);
@@ -44,7 +44,7 @@ function throttle(fn, delay = 100) {
   let timer = 0;
   return function () {
     if (timer) return;
-    timer = setTimeout(() =\> {
+    timer = setTimeout(() => {
       fn.apply(this, arguments);
       timer = 0;
     }, delay);
@@ -156,7 +156,7 @@ function throttle(fn, delay = 100) {
 
 - props 和 \$emit: 父组件通过 props 传递数据给子组件，子组件通过 \$emit 触发事件更改父组件内容
 - 自定义事件: Vue 使用 new Vue, Vue3 使用 event-emitter, 用于不相关的组件
-- \$attr: 获取父组件传入子组件未定义在 props 和 emits 中的属性和方法，用于父子组件通信，结合v-bind="\$attr"可以实现跨级祖孙通信
+- \$attr: 获取父组件传入子组件未定义在 props 和 emits 中的属性和方法，用于父子组件通信，结合 v-bind="\$attr"可以实现跨级祖孙通信
 - \$parent: 父子组件通信，子组件获取父组件
 - \$refs: 父子组件通信，父组件获取子组件
 - provide/inject: 祖孙组件通信
@@ -376,7 +376,7 @@ function throttle(fn, delay = 100) {
   - client -https 请求-\> server -CA 证书+公钥 A-\> client 验证证书 -公钥 A 加密随机码 key-\> server -私钥 B 解密随机码-\>加密数据 -\> client -随机码解密-\> 数据
 - 使用正规厂商的证书，慎用免费的
 
-20. \<script\> async和defer有什么区别
+20. \<script\> async 和 defer 有什么区别
 
 - parser: +
 - fetch: -
@@ -562,7 +562,7 @@ async  | HTML Parser:  ++++++++  ++++
   - 成本比较高
 - 虚拟列表（不建议，容易出 bug，成本高，实现复杂，性能差）
   - 只渲染可视区域 DOM
-  - 其他隐藏区域不显示，只用div撑起高度
+  - 其他隐藏区域不显示，只用 div 撑起高度
   - 随着浏览器滚动，创建和销毁 DOM
 
 3. 前端常用的设计模式有哪些？并说明使用场景
@@ -806,27 +806,27 @@ Foo.a(); // 1
 
 ```js
 Promise.resolve()
-  .then(() =\> {
+  .then(() => {
     console.log(0);
     return Promise.resolve(4);
   })
-  .then((res) =\> {
+  .then((res) => {
     console.log(res);
   });
 Promise.resolve()
-  .then(() =\> {
+  .then(() => {
     console.log(1);
   })
-  .then(() =\> {
+  .then(() => {
     console.log(2);
   })
-  .then(() =\> {
+  .then(() => {
     console.log(3);
   })
-  .then(() =\> {
+  .then(() => {
     console.log(5);
   })
-  .then(() =\> {
+  .then(() => {
     console.log(6);
   });
 ```
@@ -847,7 +847,7 @@ componentDidMount() {
   console.log(this.state.val);
   this.setState({ val: this.state.val + 1 });
   console.log(this.state.val);
-  setTimeout(() =\> {
+  setTimeout(() => {
     this.setState({ val: this.state.val + 1 });
     console.log(this.state.val);
     this.setState({ val: this.state.val + 1 });
@@ -912,7 +912,7 @@ console.log(a[b]); // c
   - 统计自定义事件
   - 统计错误
   - 统计性能指标
-- 发送数据使用img
+- 发送数据使用 img
   - 简单易用
   - 支持跨域
 - 报错统计要结合 Vue/React 报错
@@ -955,7 +955,7 @@ const store = {
 };
 const getters = {
   layers() {
-    store.page.components.map((item) =\> ({ id: item.id, name: item.name }));
+    store.page.components.map((item) => ({ id: item.id, name: item.name }));
   },
 };
 ```

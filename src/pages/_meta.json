@@ -1,11 +1,14 @@
 {
-    "index": {
-      "title": "About",
-      "type": "page"
-    },
-    "interview": {
-      "title": "Interview",
-      "type": "page"
-    }
+  "index": {
+    "title": "About",
+    "type": "page"
+  },
+  "interview": {
+    "title": "Interview",
+    "type": "page"
+  },
+  "resume": {
+    "title": "Resume",
+    "type": "page"
   }
-  
+}
