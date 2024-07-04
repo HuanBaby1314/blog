@@ -1,14 +1,22 @@
 {
   "index": {
     "title": "About",
-    "type": "page"
+    "type": "page",
+    "author": "Jack Huan"
   },
   "interview": {
     "title": "Interview",
-    "type": "page"
+    "type": "page",
+    "author": "Jack Huan"
+  },
+  "architecture": {
+    "title": "Architecture",
+    "type": "page",
+    "author": "Jack Huan"
   },
   "resume": {
     "title": "Resume",
-    "type": "page"
+    "type": "page",
+    "author": "Jack Huan"
   }
 }
