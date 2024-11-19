@@ -14,9 +14,7 @@ description: "简历，个人简历，resume"
 <div className="flex flex-row flex-wrap justify-between align-center">
   <span className="w-1/2">宦兴安（Jack Huan）</span>
   <span className="w-1/2">中国 上海</span>
-  <span className="w-1/2">
-    [huanxingan1314@163.com](mailto:huanxingan1314@163.com)
-  </span>
+  <span className="w-1/2">huanxingan1314@163.com</span>
   <span className="w-1/2">(+86) MTc3MTkzMTMwMTA=</span>
 </div>
 
@@ -33,11 +31,18 @@ description: "简历，个人简历，resume"
 - **语言**: JavaScript, TypeScript, HTML, CSS, VBScript, Shell
 - **技术栈**: React（3 year+）, Redux, Next.js, Webpack, Jest, Vue(2 year+), Vuex, Axios, ElementUI, Uniapp, JQuery, etc.
 - **代码设计**: FP, OOP, TDD
-- **其他**: AntDesign,MongoDB, Redis, Linux, Node.js, Nest.js, Remix, ArkTS, Canvas, WechatApp, Liquid, EJS, Bun, Hono, ChatGPT, etc.
+- **其他**: 织信 Lowcode, AntDesign, MongoDB, PostgreSQL, Redis, Linux, Node.js, Nest.js, Remix, ArkTS, Canvas, WechatApp, Liquid, EJS, Bun, Hono, ChatGPT, etc.
 
 ---
 
 ## **工作经历**
+
+### **2024.06-18 - 至今** 上海希望树生物科技有限公司
+
+前端开发工程师 综合管理部-数据中心
+
+1. 低代码平台迭代与维护
+2. 时宜小助手开发与维护
 
 ### **2021.04 - 2024.03** 携程商旅信息服务（上海）有限公司
 
@@ -76,6 +81,17 @@ HTML5 前端开发工程师 研发部
 ---
 
 ## 项目经验
+
+### 织信低代码系统平台 (2024.06 - 至今)
+
+- 介绍：iFDL财数互联、iCRM客户管理、iDMS渠道管理、维度表内部系统
+- 职责：系统功能开发 / 取数插件开发 / 数据表维护
+- 内容：
+  - 应用设计、应用监控、应用管理
+  - 数据表、仪表盘、工作流
+  - 前端组件开发
+  - 取数插件开发
+- 技术栈：Vue、PostgreSQL、Python、Chrome Extensions
 
 ### 携程商旅机票退票系统 (2023.09 - 2024.02)
 
@@ -131,5 +147,10 @@ HTML5 前端开发工程师 研发部
 
 ---
 
-- **阅读**：《Javascript 权威指南》《Javascript 高级程序设计》《CSS 世界》《ecma262》《clean code/代码整洁之道》
+- **阅读**：
+  - 《Javascript 权威指南》
+  - 《Javascript 高级程序设计》
+  - 《CSS 世界》
+  - 《ecma262》
+  - 《Clean Code/代码整洁之道》
 - **学习**：chatGPT、bilibili、github、youtube、慕课

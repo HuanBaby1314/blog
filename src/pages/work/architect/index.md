@@ -1,7 +1,7 @@
----
+<!-- ---
 type: page
 title: Architecture
----
+--- -->
 
 # Web 前端架构师
 ## 需求分析和架构设计
