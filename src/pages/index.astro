@@ -1,0 +1,56 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { getCollection } from "astro:content";
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>🧑‍🚀 Welcome!</h1>
+      <p>
+        Hi, I'm Jack Huan! A Front-end Engineer, Dad of two kids. My friends
+        also call me <b>Rabbit</b> as my Chinese initials.
+      </p>
+      <p>
+        I am a front-end developer base in Shanghai, specializing in building
+        web front-end applications.I previously worked at <a
+          href="http://www.xglory.cn/"
+          target="_blank">Xglory</a
+        >, <a href="https://www.infodator.com/" target="_blank">Infodator</a> and
+        <a href="https://ct.ctrip.com/" target="_blank">Trip.Biz</a>.
+      </p>
+      <p>
+        I’ve always been a logical thinker since I was young, that’s why I
+        started my career by writing some code. Coding is fun and solving
+        problems is enjoyable, but it’s not everything in life. After gaining
+        insight at work and making my first pot of gold, I’ve got more interest
+        in different things, including cooking, sports, music, cartoon, and
+        more.
+      </p>
+
+      <p>
+        Almost all my skills were learned online for free thanks to the
+        Internet, AI models and my friend <a
+          href="https://chrislin.vercel.app/"
+          target="_blank">Chris Lin</a
+        >. You can do it too.
+      </p>
+      <p>
+        Right now I live in Shanghai. If you are around, feel free to reach me
+        out, we could have some coffee or work together.
+      </p>
+    </main>
+    <Footer />
+  </body>
+</html>
