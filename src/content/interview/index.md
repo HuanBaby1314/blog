@@ -1,7 +1,7 @@
 ---
 type: page
 title: Interview
-date: 2024-06-06
+pubDate: 2024-06-06
 description: "面经，面试题，interview"
 ---
 
