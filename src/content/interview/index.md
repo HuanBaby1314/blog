@@ -5,6 +5,22 @@ pubDate: 2024-06-06
 description: "面经，面试题，interview"
 ---
 
+<details>
+<summary><b>前端面试题请看我！！！！！</b></summary>
+
+- [CodeTop](https://codetop.cc/home)
+- [前端面试题宝典](https://fe.ecool.fun/topic-list)
+- [石小涛前端面试真题](https://bytedance.larkoffice.com/base/app8Ok6k9qafpMkgyRbfgxeEnet?table=tblEnSV2PNAajtWE&view=vewJHSwJVd)
+- [前端进阶之旅](https://interview.poetries.top/)
+- [大厂面试每日一题](https://q.shanyue.tech/)
+- [大前端面试题库](http://bigerfe.com/)
+- [web前端面试](https://vue3js.cn/interview/)
+- [木易杨前端进阶](https://muyiy.cn/question/)
+- [前端面试集锦](https://github.com/paddingme/Front-end-Web-Development-Interview-Question)
+- [前端面试每日 3+1](https://github.com/haizlin/fe-interview/)
+
+</details>
+
 <details><summary><b>面试基础学习</b></summary>
 
 1. 请说明 Ajax Fetch Axios 三者的区别
@@ -135,6 +151,7 @@ function throttle(fn, delay = 100) {
 - 解决方法:
   - JSONP: 通过 script 的 src 获取跨域内容
   - CORS:
+
     ```javascript
     response.setHeader("Access-Control-Allow-Origin", "*"); // 预先跨域域名
     response.setHeader("Access-Control-Allow-Headers", "X-Requested-With");
@@ -1110,6 +1127,7 @@ const getters = {
 将对象与构建函数通过原型链连接起来
 将构建函数中的 this 绑定到新建的对象上
 根据构建函数返回类型作判断，如果是原始值则被忽略，如果是返回对象，需要正常处理
+
 </details>
 
 <details>
