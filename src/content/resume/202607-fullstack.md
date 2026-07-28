@@ -1,0 +1,178 @@
+---
+type: page
+title: Resume Fullstack
+pubDate: 2026-07-28
+description: "简历，个人简历，resume，AI 全栈"
+---
+
+# 宦兴安
+
+# AI 全栈工程师
+
+---
+
+<div className="flex flex-row flex-wrap justify-between align-center">
+  <span className="w-1/2">宦兴安（Jack Huan）</span>
+  <span className="w-1/2">中国 上海</span>
+  <span className="w-1/2">huanxingan1314@163.com</span>
+  <span className="w-1/2">(+86) MTc3MTkzMTMwMTA=</span>
+  <span className="w-1/2">8 年研发经验（前端 → Java 全栈 → Python/RPA → AI 应用）</span>
+  <span className="w-1/2">GitHub: HuanBaby1314</span>
+</div>
+
+---
+
+## 求职意向
+
+**AI 全栈工程师**。8 年工程沉淀，从**前端 → Java 后端 → Python/RPA → AI 应用**完整演进，擅长独立完成**从需求到上线的全链路交付**：前端交互、后端服务、数据工程、自动化、部署运维。具备 **AI 应用落地能力**——RAG、Agent、Prompt 工程，能把大模型能力融入端到端的生产系统。
+
+---
+
+## 教育背景
+
+**宿州学院 软件工程 统招本科 2014.09 - 2018.06**
+
+---
+
+## 工作技能
+
+- **后端 / 服务端**: **Java、Spring Boot、MyBatis-Plus**、Sa-Token 鉴权、多数据源切换、Redis 缓存、PostgreSQL/MySQL；**Node.js、Nest.js、Remix、Hono、Bun**；PHP（Lumen 微服务 / ThinkPHP）
+- **前端**: **React（5 year+）、Next.js、Redux/Rematch**；**Vue2/3、Vuex/Pinia、Element Plus、Uniapp**；Webpack/Vite、性能优化、埋点监控、低代码平台
+- **RPA / 自动化**: **Playwright**（Java）、**PyAutoGUI、pywinauto、uiautomation**、OpenCV 模板匹配、**PaddleOCR / YOLO 视觉识别**、Chrome Extension、APScheduler 定时调度
+- **AI / 大模型应用**: **RAG 检索增强生成**（文档解析、Embedding、向量检索、pgvector）、**Agent / 多智能体编排**、Prompt 工程、LangChain4j、Ollama 本地化部署（Qwen3 / qwen3-embedding）、MCP、Coze、FastGPT 私有化部署
+- **数据工程**: 多渠道数据采集与清洗（支付/银行/ERP）、定时增量抓取、**Chrome Extension 网络拦截**、Excel 导入导出（EasyExcel/PHPSpreadsheet）、飞书开放平台集成
+- **语言**: **TypeScript、JavaScript、Java、Python、PHP**、Shell
+- **工程与协作**: **Code Review、技术选型、概设文档、单元测试、监控告警**、前端安全防护、Docker、Linux
+
+---
+
+## 工作经历
+
+### 2024.06 - 至今　上海希望树生物科技有限公司　综合管理部-数据中心
+
+**全栈工程师 / AI 应用开发**（前端 → Java 全栈 → Python/RPA → AI）
+
+1. **全栈业务系统**：主导时宜小助手后台（sypp-admin，Spring Boot）、协作管理系统（sypp-collab，Spring Boot + Vue3 + 飞书 SSO + 部门/用户同步 + 机器人通知）、公司官网（ThinkPHP + Docker），覆盖前端 + 后端 + 部署全链路
+2. **数据工程**：自研财数互联 iFDL 金融数据管道（聚合支付宝/招行/建行等多源交易，规则审批后推送银行付款与金蝶 ERP 凭证，**235 次提交**）；巨量云图多账户财务数据爬虫（Playwright + 短信验证码转发 + 增量回填 + 飞书告警）；数据采集服务（PHP/Lumen，214 次迭代）
+3. **RPA 与桌面自动化**：旺店通 ERP 桌面自动化（PyAutoGUI + OpenCV + YOLO 按钮检测 + 可视化流程编排）、通用 Windows 自动化引擎（20+ Action、工作流引擎、定时调度、飞书通知）
+4. **AI 应用落地**：基于 LangChain4j + Spring Boot 构建「CEO 数字孪生」Agent 系统（感知-认知-执行架构）；主导「AI 会议预演」RAG 系统（飞书知识库 + qwen3-embedding + pgvector + qwen3-8b + Ollama 本地化）
+5. **低代码平台**：基于织信 Informat 平台开发 iFDL / iDMS，沉淀平台受限运行时下的工程化最佳实践
+
+### 2021.04 - 2024.03　携程商旅信息服务（上海）有限公司　MBU-商旅事业部　高级前端开发工程师
+
+1. 机票事业线退改页面 **owner**，提效方案设计、技术选型、项目进度管理
+2. 需求评审估时、概设文档、开发、单元测试、埋点**监控与告警处理**、前端**安全防护**
+3. 生产事件处理与文档归纳，页面**性能优化**
+4. **code review** 与技术分享，协助新人快速适应研发流程，帮助初中级研发**解决疑难问题**
+
+### 2020.04 - 2021.03　上海容智信息科技有限公司　研发部　前端工程师
+
+1. PC + **微信小程序**政务平台研发与维护
+2. **大屏可视化**平台、**地图**与**实时监控**平台研发与维护
+3. 铁塔新闻**微信公众号**研发与维护
+
+### 2018.10 - 2020.03　上海星共科技有限公司　研发部　Node 全栈开发
+
+1. CMS 内容管理平台**前后端研发**与维护
+2. RPA 流程自动化 **Chrome Extension 研发**与维护
+3. 财务报表数据库导出与统计，自动化 **shell 脚本**、**图片压缩**与 html-to-pdf 转换工具
+
+### 2018.06 - 2018.09　上海卡易客互联网科技有限公司　研发部　HTML5 前端开发工程师
+
+1. Vue 全家桶 + **Cordova** **H5 混合应用**研发
+
+---
+
+## 项目经验
+
+### 时宜小助手 / 协作管理系统（2025.06 - 至今）
+
+- **介绍**：公司核心运营后台（sypp-admin）与企业协作平台（sypp-collab，含飞书 SSO、部门/用户同步、机器人通知）
+- **职责**：全栈开发
+- **内容**：
+  - sypp-admin：菜单/角色/权限（Sa-Token）、代码生成器、EasyExcel 导入导出，**415 个 Java 源文件**持续迭代
+  - sypp-collab：Spring Boot 多数据源 + Vue3 + Element Plus + 飞书集成，含短信/权限/系统模块
+- **技术栈**：Java、Spring Boot、MyBatis-Plus、Sa-Token、PostgreSQL、Redis、Vue3、Element Plus、飞书开放平台
+
+### 财数互联 iFDL 金融数据管道（2024.06 - 2026.05）
+
+- **介绍**：聚合支付宝/招商银行/建设银行/网商银行等多源交易数据，经规则审批工作流后推送银行付款、生成金蝶 ERP 凭证
+- **职责**：核心开发与持续迭代（**235 次提交**，迭代最密集的项目）
+- **内容**：
+  - 设计多渠道对账数据同步与审批流引擎，覆盖收款同步、付款审批、银行推送、凭证生成
+  - 在**织信低代码平台受限运行时**下沉淀工程化方案（无 async/Promise/Node 内建模块约束）
+- **技术栈**：JavaScript(ES6)、织信 Informat 低代码平台、PostgreSQL
+
+### 巨量云图财务数据采集爬虫（2025.12 - 2026.07）
+
+- **介绍**：巨量云图共享钱包财务日报多账户自动化采集系统，支撑公司财务对账
+- **职责**：独立设计与开发
+- **内容**：
+  - **Playwright(Java) 无头 Chrome 自动化**，短信验证码经 SmsForwarder webhook 自动回填，多账户隔离
+  - **API 响应拦截**精准抓取数据，增量拉取 + 历史回填，完成后**飞书机器人告警**
+  - 沉淀 Playwright `waitForResponse` 反模式经验文档
+- **技术栈**：Java、Spring Boot、Playwright、PostgreSQL、MyBatis-Plus、飞书机器人
+
+### 旺店通 ERP 桌面 RPA 自动化（2026.06）
+
+- **介绍**：针对旺店通 ERP 的桌面流程自动化工具，支持 GUI 操作录制回放、可视化流程编排、定时执行
+- **职责**：独立设计与开发
+- **内容**：
+  - **PyAutoGUI + OpenCV 模板匹配**精准定位控件，可选 **YOLO** 做按钮检测
+  - 可视化流程编辑器（浏览器 UI）+ 悬浮控制器（暂停/单步/停止）+ **APScheduler 定时调度**
+  - 每步骤确认规则、子菜单导航、文件上传，覆盖真实 ERP 业务流程
+- **技术栈**：Python、FastAPI、PyAutoGUI、OpenCV、YOLO(ultralytics)、pywinauto、APScheduler
+
+### AI 会议预演 RAG 系统（2026.03）
+
+- **介绍**：基于飞书知识库文档（PDF/PPT/Excel）的会议预演与智能问答系统，按会议类型（战略/运营/产品/人才）检索相关知识辅助决策
+- **职责**：RAG 链路设计 / 全栈开发
+- **内容**：
+  - 搭建 **RAG 全链路**：飞书文档抽取 → **qwen3-embedding 向量化** → **PostgreSQL + pgvector 存储/检索** → **qwen3-8b 生成**
+  - Spring Boot 后端 + Vue3 前端，**Ollama 本地化部署**保障数据不出企业
+- **技术栈**：Java、Spring Boot、Vue3、PostgreSQL、pgvector、Ollama、Qwen3、飞书开放平台
+
+### CEO 数字孪生 Agent 系统（2026.03）
+
+- **介绍**：以「感知-认知-执行」架构构建的企业级数字孪生智能体，集成知识库、推理与执行能力
+- **职责**：架构设计 / 核心模块开发
+- **内容**：
+  - 基于 **LangChain4j** 实现 Chain-of-Thought 推理与多模块协同（感知/知识/执行/API）
+  - 飞书 OpenClaw SDK 集成，打通企业 IM 数据与 Agent 交互
+- **技术栈**：Java 17、Spring Boot 3.2、LangChain4j、PostgreSQL、Redis、飞书 OpenClaw
+
+### 携程商旅机票退票系统（2023.09 - 2024.02）
+
+- **介绍**：携程商旅机票退票业务（APP & Online & Offline 三端）
+- **职责**：订后流程 owner / 核心开发 / 性能优化 / 项目管理
+- **内容**：
+  - 主导退票改版**提升开发效率约 50%**，**减少退票生产事件约 30%**
+  - 创建监控面板，建立关键 UV、Error、性能指标告警；通过文档与 CR 带新人上手
+- **技术栈**：React、React Hooks、Rematch、Next.js、Axios
+
+### 携程商旅机票预订系统（2021.04 - 2023.10）
+
+- **介绍**：携程商旅机票预订业务（APP & Online & Offline 三端）
+- **职责**：核心开发 / 性能优化 / 项目管理
+- **内容**：
+  - 核心需求研发、业务组件、数据埋点、监控与生产事件处理
+  - code review 负责人，负责**代码规范、安全性审查**；**低代码**订单详情页 owner
+- **技术栈**：React、Redux、Axios、Remix
+
+---
+
+## 自我评价
+
+---
+
+- **全链路交付**：能独立打通前端 + 后端 + 数据 + 自动化 + 部署，**从 0 到 1 把系统推上线**
+- **技术栈演进**：前端 → Java 全栈 → Python/RPA → AI 应用，**跨栈沟通与系统集成**能力强
+- **owner 意识强**：从需求到上线全流程负责，良好的**自驱力**与**行动力**
+- **解决问题**能力强，**抗压**能力强，擅于把新技术快速转化为生产工具
+
+## 个人爱好
+
+---
+
+- **阅读**：《JavaScript 权威指南》《JavaScript 高级程序设计》《CSS 世界》《ecma262》《Clean Code/代码整洁之道》
+- **学习**：GitHub、Bilibili、YouTube、慕课——持续追踪 LLM / Agent / RPA 前沿
