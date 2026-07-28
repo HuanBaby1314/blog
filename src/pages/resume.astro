@@ -4,20 +4,75 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection, render } from 'astro:content';
-const posts = (await getCollection('resume')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+
+// Resume versions: both are rendered at build time; a tiny inline script
+// toggles visibility on the client based on the ?v= query param.
+//   ?v=ai         -> AI 应用开发版 (default)
+//   ?v=fullstack  -> AI 全栈版
+const VERSIONS = [
+	{ key: 'ai', slug: '202607', label: 'AI 应用开发' },
+	{ key: 'fullstack', slug: '202607-fullstack', label: 'AI 全栈' },
+] as const;
+
+const posts = await getCollection('resume');
+
+// Render every version up front so the static page ships with all variants.
+const rendered = await Promise.all(
+	VERSIONS.map(async (v) => {
+		const post = posts.find((p) => p.id === v.slug);
+		if (!post) {
+			throw new Error(`Resume version "${v.slug}" not found`);
+		}
+		const { Content } = await render(post);
+		return { ...v, Content };
+	}),
 );
-const { Content } = await render(posts[0]);
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={`${SITE_TITLE} · Resume`} description={SITE_DESCRIPTION} />
 	</head>
 	<style>
 		main {
 			width: 960px;
+		}
+		/* Version switcher */
+		.version-bar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 0.5rem;
+			flex-wrap: wrap;
+			margin: 1.5em 0 0.5em;
+		}
+		.version-bar .label {
+			color: rgb(var(--gray));
+			font-size: 0.9em;
+		}
+		.version-bar a {
+			display: inline-block;
+			padding: 0.35em 1em;
+			border-radius: 999px;
+			text-decoration: none;
+			color: rgb(var(--gray-dark));
+			background: rgb(var(--gray-light), 40%);
+			font-size: 0.9em;
+			transition: 0.2s ease;
+		}
+		.version-bar a:hover {
+			color: var(--accent);
+			background: rgb(var(--gray-light), 80%);
+		}
+		.version-bar a.active {
+			color: #fff;
+			background: var(--accent);
+			font-weight: 600;
+		}
+		/* Hide inactive resume variants. `hidden` is updated client-side from ?v=. */
+		.resume-variant[hidden] {
+			display: none;
 		}
 		ul {
 			display: flex;
@@ -87,8 +142,44 @@ const { Content } = await render(posts[0]);
 	<body>
 		<Header />
 		<main>
-			<Content />
+			<nav class="version-bar" aria-label="简历版本切换">
+				<span class="label">简历版本：</span>
+				{
+					rendered.map((r) => (
+						<a
+							href={`/resume?v=${r.key}`}
+							data-version={r.key}
+						>
+							{r.label}
+						</a>
+					))
+				}
+			</nav>
+			{
+				rendered.map((r) => (
+					<section class="resume-variant" data-version={r.key} hidden={r.key !== 'ai'}>
+						<r.Content />
+					</section>
+				))
+			}
 		</main>
 		<Footer />
+		<script is:inline>
+			(function () {
+				const params = new URLSearchParams(location.search);
+				const wanted = params.get('v') || 'ai';
+				const variants = document.querySelectorAll('.resume-variant');
+				const links = document.querySelectorAll('.version-bar a[data-version]');
+				let active = wanted;
+				const known = new Set(Array.from(variants).map((el) => el.dataset.version));
+				if (!known.has(active)) active = 'ai';
+				variants.forEach((el) => {
+					el.hidden = el.dataset.version !== active;
+				});
+				links.forEach((a) => {
+					a.classList.toggle('active', a.dataset.version === active);
+				});
+			})();
+		</script>
 	</body>
 </html>
