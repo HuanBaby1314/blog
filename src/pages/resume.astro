@@ -5,13 +5,15 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection, render } from 'astro:content';
 
-// Resume versions: both are rendered at build time; a tiny inline script
+// Resume versions: all are rendered at build time; a tiny inline script
 // toggles visibility on the client based on the ?v= query param.
 //   ?v=ai         -> AI 应用开发版 (default)
 //   ?v=fullstack  -> AI 全栈版
+//   ?v=fde        -> FDE 前线部署版
 const VERSIONS = [
 	{ key: 'ai', slug: '202607', label: 'AI 应用开发' },
 	{ key: 'fullstack', slug: '202607-fullstack', label: 'AI 全栈' },
+	{ key: 'fde', slug: '202607-fde', label: 'FDE 前线部署' },
 ] as const;
 
 const posts = await getCollection('resume');
