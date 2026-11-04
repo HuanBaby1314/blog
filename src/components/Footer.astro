@@ -7,9 +7,11 @@ const social_links = [
 
 <footer>
 	&copy; {today.getFullYear()} 兔子AI. All rights reserved.
-	<!-- 境内(大陆服务器/CDN)部署需 ICP 备案，拿到备案号后取消注释填入：
-	<p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">X ICP备 XXXXXXXX 号</a></p>
-	-->
+	<p class="icp">
+		<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener"
+			>皖ICP备2026038841号</a
+		>
+	</p>
 	<div class="social-links">
 		{
 			social_links.map((item) => (
@@ -32,6 +34,17 @@ const social_links = [
 		background: linear-gradient(var(--gray-gradient)) no-repeat;
 		color: rgb(var(--gray));
 		text-align: center;
+	}
+	.icp {
+		margin: 0.5em 0 0;
+		font-size: 0.85em;
+	}
+	.icp a {
+		color: rgb(var(--gray));
+		text-decoration: none;
+	}
+	.icp a:hover {
+		color: rgb(var(--gray-dark));
 	}
 	.social-links {
 		display: flex;
