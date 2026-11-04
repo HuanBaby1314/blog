@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.com',
+	site: 'https://www.tuzitv.asia',
 	integrations: [mdx(), sitemap()],
 	server: {
 		// dev server 对局域网开放（默认仅绑定 localhost）
