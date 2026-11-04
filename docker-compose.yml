@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    container_name: tuzi-ai
+    ports:
+      - "8080:80" # 宿主机端口按需调整；正式上线建议前置 Nginx/网关做 80/443 与证书
+    restart: unless-stopped
