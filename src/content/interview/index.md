@@ -6,7 +6,7 @@ description: "面经，面试题，interview"
 ---
 
 <details>
-<summary><b>前端面试题请看我！！！！！</b></summary>
+<summary><b>面试题库请看我！！！！！</b></summary>
 
 - [CodeTop](https://codetop.cc/home)
 - [前端面试题宝典](https://fe.ecool.fun/topic-list)
@@ -1071,10 +1071,10 @@ const getters = {
 ### 自我介绍
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;面试官您好！我叫XXX，20XX 年毕业于(xxxx学校)(xx学历)(XX专业)。
-   之前任职于携程商旅信息服务（上海）有限公司，担任商旅事业部高级前端开发工程师。
-   在职期间主要负责商旅机票退改相关项目研发，为团队提升研发效率 50%以上,降低生产故障率 30%。
-   对业务研发、生产事件、性能调优、埋点监控与告警都十分熟悉。
-   因此来面试贵司前端开发岗位，希望能获得此次机会，谢谢！</p>
+   之前任职于上海希望树生物科技有限公司，担任综合管理部-数据中心 AI 应用开发 / 全栈工程师。
+   在职期间主导 RAG 检索增强、Agent 编排等 AI 应用落地，并独立完成从前端、后端到数据工程、RPA 自动化的全链路交付。
+   对 LLM 应用工程（RAG / Agent / Prompt）、Java 全栈、数据工程与监控告警都十分熟悉。
+   因此来面试贵司 AI 全栈开发岗位，希望能获得此次机会，谢谢！</p>
 
 <details>
     <summary><b>阿里影业面经</b></summary>
