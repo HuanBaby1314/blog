@@ -6,8 +6,9 @@ const social_links = [
 ---
 
 <footer>
-	&copy; {today.getFullYear()} 兔子AI. All rights reserved.
-	<p class="icp">
+	<p class="copyright">
+		&copy; {today.getFullYear()} 兔子AI. All rights reserved.
+		<span class="sep">|</span>
 		<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener"
 			>皖ICP备2026038841号</a
 		>
@@ -35,15 +36,17 @@ const social_links = [
 		color: rgb(var(--gray));
 		text-align: center;
 	}
-	.icp {
-		margin: 0.5em 0 0;
-		font-size: 0.85em;
+	.copyright {
+		margin: 0;
 	}
-	.icp a {
+	.copyright .sep {
+		margin: 0 0.6em;
+	}
+	.copyright a {
 		color: rgb(var(--gray));
 		text-decoration: none;
 	}
-	.icp a:hover {
+	.copyright a:hover {
 		color: rgb(var(--gray-dark));
 	}
 	.social-links {
