@@ -12,6 +12,16 @@ const social_links = [
 		<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener"
 			>皖ICP备2026038841号-1</a
 		>
+		<span class="sep">|</span>
+		<a
+			class="gaba"
+			href="https://beian.mps.gov.cn/#/query/webSearch?code=34022102000656"
+			target="_blank"
+			rel="noreferrer"
+		>
+			<img src="/beian.png" alt="公安备案徽标" width="14" height="16" />
+			皖公网安备34022102000656号
+		</a>
 	</p>
 	<div class="social-links">
 		{
@@ -48,6 +58,12 @@ const social_links = [
 	}
 	.copyright a:hover {
 		color: rgb(var(--gray-dark));
+	}
+	.copyright .gaba img {
+		width: 14px;
+		height: 16px;
+		vertical-align: -3px;
+		margin-right: 4px;
 	}
 	.social-links {
 		display: flex;
