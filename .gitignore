@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# 手动部署暂存目录(本地复制 dist 的快照,勿提交)
+/blog/
